@@ -1,12 +1,14 @@
 package curs1;
 
 import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 
 public class TestNgExample {
 	
 	@BeforeSuite
 	public void beforeSuite() {
-		System.out.println("Before suite");
+		System.out.println("Before Suite");
 	}
 	
 	@AfterSuite
@@ -16,22 +18,22 @@ public class TestNgExample {
 	
 	@BeforeClass
 	public void beforeClass() {
-		System.out.println("Before class");
+		System.out.println("Before Class");
 	}
 	
 	@AfterClass
 	public void afterClass() {
-		System.out.println("After class");
+		System.out.println("After Class");
 	}
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		System.out.println("Before method");
+		System.out.println("Before Method");
 	}
 	
 	@AfterMethod
 	public void afterMethod() {
-		System.out.println("After method");
+		System.out.println("After Method");
 	}
 	
 	@Test
@@ -43,4 +45,5 @@ public class TestNgExample {
 	public void test2() {
 		System.out.println("Test 2");
 	}
+
 }

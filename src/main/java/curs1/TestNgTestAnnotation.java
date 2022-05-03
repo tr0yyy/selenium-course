@@ -2,27 +2,31 @@ package curs1;
 
 import org.testng.annotations.Test;
 
-public class TestNgPriority {
+@Test
+public class TestNgTestAnnotation {
 	
-	@Test(priority=0)
+	
+	//@Test
 	public void one() {
 		System.out.println("First");
 	}
-	@Test(priority=1)
+	//@Test
 	public void two() {
 		System.out.println("Second");
 	}
-	@Test(priority=2)
+	//@Test
 	public void three() {
 		System.out.println("Third");
 	}
-	@Test
+	//@Test
 	public void four() {
 		System.out.println("Fourth");
 	}
-	@Test
-	public void five() {
+	//@Test
+	private void five() {
 		System.out.println("Fifth");
 	}
+	
+	
 
 }
