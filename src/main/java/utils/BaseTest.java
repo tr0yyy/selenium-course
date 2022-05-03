@@ -11,6 +11,7 @@ public class BaseTest {
 	
 	@BeforeClass
 	public void setUp() {
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.get("https://the-internet.herokuapp.com/login");
